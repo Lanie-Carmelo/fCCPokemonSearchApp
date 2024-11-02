@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title> Pokémon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+  <body>
+    <h1>Pokémon Search App</h1>
+    <form id="search-container">
+      <label for="search-input">Search for Pokémon Name or ID:</label>
+      <input id="search-input" type="text" aria-label="Enter Pokémon name or ID" required>
+      <button id="search-button" type="submit" aria-label="Search for Pokémon">Search</button>
+    </form>
+    <div id="results">
+      <table>
+        <tr>
+            <th scope="colgroup" colspan="2">Basic Info</th>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td id="pokemon-name"></td>
+        </tr>
+        <tr>
+            <td>ID:</td>
+            <td id="pokemon-id"></td>
+        </tr>
+        <tr>
+            <td>Height:</td>
+            <td id="height"></td>
+        </tr>
+        <tr>
+            <td>Weight:</td>
+            <td id="weight"></td>
+        </tr>
+        <tr>
+            <td>Types:</td>
+            <td id="types"></td>
+        </tr>
+        <tr>
+            <th scope="colgroup" colspan="2">Stats</th>
+        </tr>
+        <tr>
+            <td>HP:</td>
+            <td id="hp"></td>
+        </tr>
+        <tr>
+            <td>Attack:</td>
+            <td id="attack"></td>
+        </tr>
+        <tr>
+            <td>Defense:</td>
+            <td id="defense"></td>
+        </tr>
+        <tr>
+            <td>Special Attack:</td>
+            <td id="special-attack"></td>
+        </tr>
+        <tr>
+            <td>Special Defense:</td>
+            <td id="special-defense"></td>
+        </tr>
+        <tr>
+            <td>Speed:</td>
+            <td id="speed"></td>
+        </tr>
+      </table>    
+      <img id="sprite" alt="Pokemon sprite">  <!-- Add this line -->
+    </div>
+    <div id="loading">Loading...</div>
+    <div id="error-message"></div>
+    <footer>
+      <p>Data provided by <span>PokéAPI</p>
+    </footer>    
+    <script src="script.js"></script>
+  </body> 
+</html>
